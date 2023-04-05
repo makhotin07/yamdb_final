@@ -12,10 +12,12 @@ DEBUG = False
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "84.252.141.166",
-    "bondaryatube.ddns.net",
-    "web",
+        "web",
 ]
+
+HOST_NAME= os.getenv('HOST_NAME')
+if HOST_NAME:
+    ALLOWED_HOSTS += HOST_NAME
 
 INSTALLED_APPS = [
     'django.contrib.admin',

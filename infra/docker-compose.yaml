@@ -13,7 +13,8 @@ services:
     env_file:
       - ./.env
   web:
-    image: bondarval/yamdb_api:v1.0
+    #image: makhotin07/yamdb_final:v3-arm64
+    build: ../api_yamdb
     restart: always
     volumes:
       - static_value:/app/static/
