@@ -13,6 +13,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "web",
+    "51.250.72.249",
 ]
 
 HOST_NAME = os.getenv('HOST_NAME')
