@@ -9,7 +9,7 @@ services:
       - ./.env
 
   web:
-    image: makhotin07/yamdb_final:latest
+    image: makhotin07/yamdb_final:v3-arm64
     restart: always
     volumes:
       - static_value:/app/static/
